@@ -619,7 +619,7 @@ header.header{
     -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.15);
     box-shadow: 0 0 20px rgba(0,0,0,0.15);
     padding-top: 18px;
-    padding-bottom: 0;
+    /**padding-bottom: 0;**/
 }
 .sticking .logo img {
     display: none;
