@@ -442,7 +442,7 @@ header.header{
 }
 .header-menu > ul > li {
     display: inline-block;
-    padding-bottom: 25px;
+    padding-bottom: 5px;
 }
 .header-menu > ul > li + li {
     margin-left: 10px;
@@ -618,7 +618,7 @@ header.header{
     background-color: #fff !important;
     -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.15);
     box-shadow: 0 0 20px rgba(0,0,0,0.15);
-    padding-top: 18px;
+    /* padding-top: 18px; */
     /**padding-bottom: 0;**/
 }
 .sticking .logo img {
