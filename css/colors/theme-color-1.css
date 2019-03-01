@@ -52,11 +52,11 @@ a:hover,
 .about-us a.read-more span,
 .team-nav li a:hover,
 .ColorSwitcher--open .ColorSwitcher__control:before {
-	color: #ff895d;
+	color: #0b7eff;
 }
 
 .sticking .register-button a:hover {
-	color: rgb(250, 116, 116);
+	color: #0b7eff;
 }
 
 .btn-primary, 
@@ -91,7 +91,8 @@ a:hover,
 .sidebar-social-icons li a:hover,
 .member-hover-wrap:before,
 .ColorSwitcher__control {
-	background-color: #ff895d;
+    background-color: #0b7eff;
+    
 }
 
 .sticking.header-style-two .register-button a:hover, 
@@ -102,7 +103,7 @@ a:hover,
 .single-feature:hover .btn-secondary:hover, 
 .single-feature.active .btn-secondary:hover,
 .header-style-three .register-button a:hover {
-	background-color: #ffa381;
+	background-color: #ffffff;
 }
 
 .main-banner-style-two .banner-content ul li:last-child a, 
@@ -110,27 +111,30 @@ a:hover,
 .review-swiper-pagination .swiper-pagination-bullet,
 .contact-info .footer-social-icons a:hover,
 .sidebar-social-icons li a:hover {
-	border-color: #ff895d;
+    border-color: #0b7eff;
+    
+    
 }
 
 .main-banner-style-two .banner-content ul li:last-child a:hover, 
 .main-banner-style-three .banner-content ul li:last-child a:hover {
-	border-color: #ffa381;
+    border-color: #0b7eff;
+    color: #0b7eff;
 }
 
 .section-title h2:before { /* ff895d */
-    background-image: -webkit-linear-gradient(135deg, transparent 16px, #ff895d 0), 
-                      -webkit-linear-gradient(45deg, transparent 16px, #ff895d 0);
-    background-image: -o-linear-gradient(135deg, transparent 16px, #ff895d 0), 
-                      -o-linear-gradient(45deg, transparent 16px, #ff895d 0);
-    background-image: linear-gradient(-45deg, transparent 16px, #ff895d 0), 
-                      linear-gradient(45deg, transparent 16px, #ff895d 0);
+    background-image: -webkit-linear-gradient(135deg, transparent 16px, #0bff79 0), 
+                      -webkit-linear-gradient(45deg, transparent 16px, #0bff79 0);
+    background-image: -o-linear-gradient(135deg, transparent 16px, #0bff79 0), 
+                      -o-linear-gradient(45deg, transparent 16px, #0bff79 0);
+    background-image: linear-gradient(-45deg, transparent 16px, #0bff79 0), 
+                      linear-gradient(45deg, transparent 16px, #0bff79 0);
 }
 .zigzag-border:before {
-    background-image: -webkit-linear-gradient(135deg, transparent 14px, #ff895d 0), 
-                      -webkit-linear-gradient(45deg, transparent 14px, #ff895d 0);
-    background-image: -o-linear-gradient(135deg, transparent 14px, #ff895d 0), 
-                      -o-linear-gradient(45deg, transparent 14px, #ff895d 0);
-    background-image: linear-gradient(-45deg, transparent 14px, #ff895d 0), 
-                      linear-gradient(45deg, transparent 14px, #ff895d 0);
+    background-image: -webkit-linear-gradient(135deg, transparent 14px, #0bff79 0), 
+                      -webkit-linear-gradient(45deg, transparent 14px, #0bff79 0);
+    background-image: -o-linear-gradient(135deg, transparent 14px, #0bff79 0), 
+                      -o-linear-gradient(45deg, transparent 14px, #0bff79 0);
+    background-image: linear-gradient(-45deg, transparent 14px, #0bff79 0), 
+                      linear-gradient(45deg, transparent 14px, #0bff79 0);
 }

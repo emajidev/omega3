@@ -569,7 +569,7 @@ header.header{
 .header-menu ul ul li:hover > a, 
 .header-menu ul ul li > a:hover, 
 .header-menu ul ul li.active > a {
-    color: #ff895d;
+    color: #0b7eff;
 }
 .header-menu ul ul li:first-child > a {}
 .header-menu ul ul li:last-child > a {}
@@ -577,11 +577,11 @@ header.header{
     text-align: right;
 }
 .register-button a{
-    color: #ff895d;
+    color: #0b7eff;
     background: #fff;
 }
 .register-button a:hover{
-    color: #ff895d;
+    color: #0b7eff;
     background: rgba(255,255,255,0.9);
 }
 .header-style-two .header-menu > ul > li:hover > a, 
@@ -589,12 +589,12 @@ header.header{
 .header-style-three .header-menu > ul > li:hover > a, 
 .header-style-three .header-menu > ul > li > a:hover  {
     background: transparent;
-    color: #ff895d;
+    color: #0bff79;
 }
 .header-style-two .header-menu > ul > li.active > a, 
 .header-style-three .header-menu > ul > li.active > a{
     background: transparent;
-    color: #ff895d;
+    color: #0bff79;
 }
 .header-style-two .register-button a{
     background: #fff;
@@ -605,11 +605,11 @@ header.header{
     color: #1b435d;
 }
 .header-style-three .register-button a{
-    background: #ff895d;
+    background: #0bff79;
     color: #fff;
 }
 .header-style-three .register-button a:hover{
-    background: #ffa381;
+    background: #0bff79;
     color: #fff;
 }
 
@@ -641,23 +641,23 @@ header.header{
 .sticking.header-style-two .header-menu > ul > li.active > a, 
 .sticking.header-style-three .header-menu > ul > li.active > a{
     background: transparent;
-    color: #ff895d;
+    color: #0bff79;
 }
 .sticking .register-button a{
-    background: #ff895d;
+    background: #0bff79;
     color: #fff;
 }
 .sticking .register-button a:hover{
-    background: #ffa381;
+    background: #0bff79;
 }
 .sticking.header-style-two .register-button a, 
 .sticking.header-style-three .register-button a{
-    background: #ff895d;
+    background: #0bff79;
     color: #fff;
 }
 .sticking.header-style-two .register-button a:hover, 
 .sticking.header-style-three .register-button a:hover{
-    background: #ffa381;
+    background: #0bff79;
 }
 
 /*=============================================
