@@ -54,10 +54,10 @@ We may release future updates so it will overwrite this file. it's better and sa
 
         $(window).on('scroll', function(){
             if($(window).scrollTop() >= 15){
-                $headerContainer.addClass('sticking');
+                $headerContainer.addClass('sticking2');
             } 
             else {
-                $headerContainer.removeClass('sticking');
+                $headerContainer.removeClass('sticking2');
             }
         }).scroll();
 
