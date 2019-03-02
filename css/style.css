@@ -648,7 +648,7 @@ header.header{
 
 /* 3.3: Sticky-header */
 .sticking {
-    background-color: rgb(56, 56, 56) !important;
+    background-color: #000000 !important;
     -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.15);
     box-shadow: 0 0 20px rgba(0,0,0,0.15);
     /* padding-top: 18px; */
