@@ -213,8 +213,8 @@ img[width="0"][height="0"] {
 /* 1.2: Buttons */
 .btn{
     font-size: 14px;
-    border-radius: 50px;
-    padding: 8.5px 27px;
+    
+   
    
 }
 .father {
@@ -304,9 +304,9 @@ img[width="0"][height="0"] {
 .bg-secondary {
     background-color: #1b435d !important;
 }
-.bg-dark {
+/* .bg-dark {
     background-color: #d5eeff !important;
-}
+} */
 .bg-light {
     background-color: #f4fbff !important;
 }
