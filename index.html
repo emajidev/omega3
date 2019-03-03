@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/colors/theme-color-1.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="modalpopup/modal.css">
+    
 </head>
 
 <body>
@@ -55,7 +57,7 @@
                             <div class='header-menu'  >
                                 
                                 <ul style="text-align: right;" >
-                                        <input type="text" placeholder="Buscar" style="text-align: right;border-color: #c7c6c6 ; border-radius: 2px;padding:5px; " >
+                                        <input type="text" placeholder="Buscar" style="text-align: right;border-color: none ; border-radius: 2px;padding:0 2px 0 2px; " >
                                     <li >
                                         <a href='#'>Cursos </a>
                                     </li>
@@ -72,17 +74,25 @@
                             <!-- End of Header-menu -->
                         </nav>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 d-none d-sm-block">
-                        <!-- Register button -->
-                        <div class="register-button"  data-animate="fadeInDown" data-delay="1">
-                            <a class="btn" href="#" style="border-radius: 2px; "><strong>Registrate</strong> </a>
-                        </div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4">
+                         <!-- Register Entrar -->
+                            <div  class="father " style="display:inline-block;color: #28a745;  " data-animate="fadeInDown" data-delay="1">
+                                <div  id="myBtn" class="son"><strong >Entrar</strong>  </div> 
+                                <div class="son btn-success"><strong >registrar</strong>  </div>     
+                            </div>
+                           
+                            
+                            
                         <!-- End of Register button -->
+                    
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Modal content -->
+
     </header>
+
     <!-- End of Main header -->
     
     <!-- Main banner -->
@@ -485,9 +495,52 @@
 		<a href="#">
 			<i class="fa fa-hand-pointer-o"></i>
 		</a>
-	</div>
-	<!-- End of Back to top button -->
+    </div>
+  
 
+	<!-- End of Back to top button -->
+    
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            
+            <div class="modal-content">
+            <span class="close">&times;</span>
+              <div class="modal-header2">
+                <div class="logocont">
+                    <img class="logoModel" src="img/logo_friyawa4png.png" alt="">
+                </div>
+                <h5>Iniciar </h5>
+    
+              </div>
+              <div class="modal-body">
+                <div class="textcont">
+                    <input class="inputIn" type="text" placeholder="correo electronico">
+                   
+                    <input class="inputIn" type="text" placeholder="contraseña">
+                </div>
+                
+            
+              </div>
+              <div class="modal-footer2" >
+              
+            <div class="textcont">
+                <div class="btn btn-success">Iniciar Seccion</div>
+            </div>
+            <div class="textcont">
+                    <a class="linksModal" href="" style="color:cadetblue">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="textcont">
+                ¿No tienes una cuenta? <a class="linksModal" href="" style="color:cadetblue">Registrate</a>
+            </div>
+            
+              </div>
+            </div>
+          
+          </div>
+          
     <!-- JS files -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -503,5 +556,6 @@
     <script src="js/retina.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="modalpopup/modal.js"></script>
 </body>
 </html>
