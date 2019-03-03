@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Document title -->
+    <title>FRIYAWA</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <!-- CSS files -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,900&#8739;Work+Sans" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <link rel="stylesheet" href="css/jqvmap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/fakeLoader.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/colors/theme-color-1.css">
+    <link rel="stylesheet" href="css/custom.css">
+    
+    <style>
+    /* Estilo para los botones */
+    .botones {
+        font-size: 16px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 100%;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        background: #ff895d;
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+
+    .boton-like {
+        background: #3e49e4;
+    }
+    .boton-favorites {
+        background: #c91515;
+    }
+    .boton-question {
+        background: #059e05;
+    }
+
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="fakeLoader"></div>
+
+    <!-- Main header -->
+
+    <header class="header">
+        
+           
+              
+                
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+                                    <a class="navbar-brand" href="#">
+                                        <img style="width:30px;height:auto; padding-bottom: 5px;" src="img/logo_friyawa4png.png" alt=""> 
+                                       <strong>FRIYAWA</strong> 
+                                             
+                                    </a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                   
+                                    <div class="collapse navbar-collapse" style="justify-content: flex-end;" id="navbarSupportedContent">
+                                            <form class="form-inline" style="width: 50%;">
+                                                    <input class="form-control mr-sm-2 "style="width: 100%;border:none;border-radius:2;height:20px;font: 1em sans-serif;" type="search" placeholder="Buscar" aria-label="Buscar">
+                                                  </form>
+                                        <ul class="navbar-nav col-auto">
+                                        <li class="nav-item active">
+                                          <a class="nav-link" href="#">Cursos <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Blog</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div   class="nav-link" href="#">Foro</div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div class="nav-link" href="#">Creativos</div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div id="myBtn" class="btn nav-link" style="color:#28a745" >Iniciar</div>
+                                        </li>
+                                        <li class="nav-item">
+                                                <div class="btn nav-link " style="color:white; " ><p style="background:#28a745 ;padding:0 10px 0 10px; border-radius:2px;">Registrarse</p> </div>                                </li>
+                                      </ul>
+                                      
+                                      
+                                    </div>
+        </nav>   
+                            
+                     
+                                   
+                                    
+                                    
+                                <!-- End of Register button -->
+                            
+                            </div>
+                        
+                   
+                </div>
+                <!-- Modal content -->
+        
+            </header>
+    <!-- End of Main header -->
+    
+    <!-- Main banner -->
+    <section class="home-video text-center" data-animate="fadeInUp" data-delay=".1" style="background:linear-gradient(to bottom, #556a79 50%, #646464 50%);">
+        <div class="container">
+            <div class="row banner-content align-items-center">
+                <div class="col-lg-9">
+                    <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/IcpzqZrpLVM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                        <!-- Botones de Me gusta, Favoritos, y Generar una Duda -->
+                        <div class="d-flex justify-content-start">
+                                <span class="botones boton-like"  id="make-like">
+                                        <i class="fa fa-thumbs-up" ></i>
+                                </span>
+                                <span class="botones boton-favorites" id="make_favorite">
+                                        <i class="fa fa-heart"></i>
+                                </span>
+                                <span class="botones boton-question" id="make_question">
+                                        <i class="fa fa-question"></i>
+                                </span>
+                        </div>
+                </div>
+                <!-- Botón de regresar a la pagina del curso -->
+                <!-- Lista de reproducción -->
+                <div class="col-lg-3">
+                    <div style="padding-bottom:1rem">
+                            <i class="fa arrow-right"></i>
+                            <button type="button" class="btn btn-info">Pagina del curso</button>
+                    </div> 
+                    <!-- Temario del curso -->
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Tema #1
+                                </button>
+                            </h2>
+                            </div>
+                        
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                    <ul class="list-group">
+                                            <!-- Videos correspondientes al tema #1 -->
+                                            <li class="list-group-item">Video N1 || 4:00</li>
+                                            <li class="list-group-item">Video N2 || 3:00</li>
+                                            <li class="list-group-item">Video N3 || 5:00</ul>
+                                            <li class="list-group-item">Video N4 || 8:00</li>
+                                            <li class="list-group-item">Video N5 || 10:00</li>
+                                    </ul>  
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Tema #2
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                    <ul class="list-group">
+                                            <li class="list-group-item">Video N1 || 4:00</li>
+                                            <li class="list-group-item">Video N2 || 3:00</li>
+                                            <li class="list-group-item">Video N3 || 5:00</ul>
+                                    </ul>  
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Tema #3
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                    <li class="list-group-item">Video N1 || 4:00</li>
+                                    <li class="list-group-item">Video N2 || 3:00</li>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- botones de siguiente/anterior video  -->
+                    <div style="padding-top:1rem">
+                        
+                        <button type="button" class="btn btn-info">Atras</button> <button type="button" class="btn btn-info">Siguiente</button>
+                    </div> 
+                </div>
+            </div>
+            <div class="row banner-content align-items-center">
+                <!-- Dudas del video -->
+                <div class="col-lg-9">
+                    <!-- Formulario - Generar nueva duda  -->
+                    <div class="d-none" id="formulario-generar-duda">
+                            <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">¿Que duda tienes?</label>
+                                    <input class="form-control" id="duda-title" type="text" placeholder="Ingresa aquí tu pregunta">
+                                    <textarea class="form-control" id="duda-text" rows="3" placeholder="Añade más comentarios sobre tu duda" ></textarea>
+                            </div>
+                            <button id="postear-duda" class="btn btn-info">Aceptar</button>
+                    </div>
+
+                    <h4>Dudas del video</h4>
+                    <div id="dudas-list" class="list-group ">
+                        <a href="#" class="list-group-item list-group-item-action">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Titulo de otra duda resuelta</h5>
+                            <small class="text-muted">3 days ago</small>
+                          </div>
+                          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                          <small>2:05 > Video N3 > Tema #2</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Titulo de la duda menos reciente</h5>
+                            <small class="text-muted">3 days ago</small>
+                          </div>
+                          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            <small>7:10 > Video N2 > Tema #3</small>
+                        </a>
+                  </div>
+                </div>               
+            </div>
+        </div>
+    </section>
+    <!-- End of Main banner -->
+
+
+    <!-- Footer -->
+    <footer class="footer text-light bg-secondary">
+    	<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<!-- Single footer -->
+					<div class="col-lg-3 col-md-6 col-sm-6">
+	    				<div class="single-footer">
+	    					<h2 data-animate="fadeInUp" data-delay="0">Contact Us</h2>
+							<ul class="footer-contact-info">
+								<li data-animate="fadeInUp" data-delay=".05">
+									<i class="fa fa-phone"></i>
+									<a href="tel:+123456789">(+1) 123-456-789</a>,
+									<a href="tel:+123456789">(+1) 987-654-321</a>
+								</li>
+								<li data-animate="fadeInUp" data-delay=".1">
+									<i class="fa fa-envelope-o"></i>
+									<a href="mailto:john-doe@example.com">john-doe@example.com</a>
+								</li>
+								<li data-animate="fadeInUp" data-delay=".15"><i class="fa fa-map-marker"></i>0123 Cameron Road, Niagara Falls, NY 0123</li>
+							</ul>
+							<ul class="footer-social-icons">
+								<li data-animate="fadeInUp" data-delay=".2"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li data-animate="fadeInUp" data-delay=".25"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								<li data-animate="fadeInUp" data-delay=".3"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+								<li data-animate="fadeInUp" data-delay=".35"><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+								<li data-animate="fadeInUp" data-delay=".4"><a href="#" target="_blank"><i class="fa fa-feed"></i></a></li>
+								<li data-animate="fadeInUp" data-delay=".45"><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+							</ul>
+	    				</div>
+					</div>
+					<!-- End of Single footer -->
+
+					<!-- Single footer -->
+					<div class="col-lg-3 col-md-6 col-sm-6">
+	    				<div class="single-footer">
+                            <h2 data-animate="fadeInUp" data-delay=".4">Recent News</h2>
+                            <div class="single-footer-post" data-animate="fadeInUp" data-delay=".45">
+                                <a href="#">Microsoft announces general availability of Azure Event Grid</a>
+                                <span><i class="fa fa-calendar-o"></i><a href="#">Jan 19, 2018</a></span>
+                            </div>
+                            <div class="single-footer-post" data-animate="fadeInUp" data-delay=".5">
+                                <a href="#">Top 6 trends impacting enterprise mobility arround world in 2018</a>
+                                <span><i class="fa fa-calendar-o"></i><a href="#">Jan 19, 2018</a></span>
+                            </div>
+                        </div>
+					</div>
+					<!-- End of Single footer -->
+
+					<!-- Single footer -->
+					<div class="col-lg-3 col-md-6 col-sm-6">
+	    				<div class="single-footer">
+	    					<h2 data-animate="fadeInUp" data-delay=".5">Resource & Support</h2>
+							<ul class="footer-links">
+								<li data-animate="fadeInUp" data-delay=".55"><a href="#"><i class="fa fa-angle-right"></i>How to Transfer a Website</a></li>
+								<li data-animate="fadeInUp" data-delay=".6"><a href="#"><i class="fa fa-angle-right"></i>Search Advertising</a></li>
+								<li data-animate="fadeInUp" data-delay=".65"><a href="#"><i class="fa fa-angle-right"></i>Affiliate Program</a></li>
+								<li data-animate="fadeInUp" data-delay=".7"><a href="#"><i class="fa fa-angle-right"></i>Start Watch Tutorials</a></li>
+								<li data-animate="fadeInUp" data-delay=".75"><a href="#"><i class="fa fa-angle-right"></i>Start a Web Hosting Business</a></li>
+							</ul>
+	    				</div>
+					</div>
+					<!-- End of Single footer -->
+
+					<!-- Single footer -->
+					<div class="col-lg-3 col-md-6 col-sm-6">
+	    				<div class="single-footer">
+	    					<h2 data-animate="fadeInUp" data-delay=".75">Newsletter</h2>
+							<p data-animate="fadeInUp" data-delay=".8">Sign up to Newsletter to get our Latest News & Special Offers</p>
+							<form class="needs-validation" data-animate="fadeInUp" data-delay=".85" action="https://themelooks.us13.list-manage.com/subscribe/post?u=79f0b132ec25ee223bb41835f&id=f4e0e93d1d" method="post" name="mc-embedded-subscribe-form" target="_blank">
+								<input class="form-control" type="email" name="EMAIL" autocomplete="off" placeholder="Your E-mail Address" required>
+								<button type="submit"><i class="fa fa-paper-plane"></i></button>
+							</form>
+	    				</div>
+					</div>
+					<!-- End of Single footer -->
+				</div>
+			</div>
+		</div>
+
+		<!-- Copyright -->
+		<div class="copyright">
+			<div class="container">
+				<p data-animate="fadeInDown" data-delay=".9">Copyright &copy; 2018. All rights reserved <a href="#">CryptoCloud</a>.</p>
+			</div>
+		</div>
+		<!-- End of Copyright -->
+    </footer>
+    <!-- End of Footer -->
+
+	<!-- Back to top button -->
+    <div class="back-to-top">
+		<a href="#">
+			<i class="fa fa-hand-pointer-o"></i>
+		</a>
+	</div>
+	<!-- End of Back to top button -->
+
+    <!-- JS files -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.vmap.min.js"></script>
+    <script src="js/jquery.vmap.world.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/fakeLoader.min.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+    <script>
+        //Script -> Generación de dudas
+        let video;
+        let generarDudaBtn = document.querySelector("#make_question");
+        let postearDudaBtn = document.querySelector("#postear-duda");
+        let formularioGenerarDuda = document.querySelector("#formulario-generar-duda");
+        let dudaContent = document.querySelector("#duda-text");
+        let dudaTitle = document.querySelector("#duda-title");
+        let dudasList = document.querySelector("#dudas-list");
+        function detectarVideo() {
+            //Acceder al contenido del iframe y a su video
+           // let ifrm = document.querySelector("iframe");
+            // using reference to iframe (ifrm) obtained above
+           // var win = ifrm.contentWindow; // reference to iframe's window
+            // reference to document in iframe
+           // var doc = ifrm.contentDocument? ifrm.contentDocument: ifrm.contentWindow.document;
+            // hacer refencia al video contenido en el iframe
+            let video = document.querySelector('video');
+            return video;
+        }
+
+        generarDudaBtn.addEventListener('click', ()=> {
+            //Verifica si el video está en reproducción
+            video = detectarVideo();
+            //Visualizar//Ocultar el formulario de generación de dudas
+            if (formularioGenerarDuda.classList.contains("d-none")) {
+                formularioGenerarDuda.classList.remove("d-none");
+            }else {
+                formularioGenerarDuda.classList.add("d-none"); 
+            }
+        });
+
+        postearDudaBtn.addEventListener("click", ()=> {
+            let nvaDuda;
+            if (dudaTitle.value && dudaContent.value) {
+                nvaDuda = `
+                    <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">${dudaTitle.value}</h5>
+                    <small class="text-muted">Hace unos segundos</small>
+                    </div>
+                    <p class="mb-1">${dudaContent.value}</p>
+                    <small>duda general</small>
+                    </a>`;
+                //Agrega la nueva duda en la lista de dudas
+                dudasList.innerHTML = nvaDuda + dudasList.innerHTML;
+                //Limpia los campos
+                dudaContent.value = "";
+                dudaTitle.value = "";
+                //Cierra el formulario
+                if (!formularioGenerarDuda.classList.contains("d-none")) 
+                    formularioGenerarDuda.classList.add("d-none");
+            }
+        });
+        
+    </script> 
+</body>
+</html>
