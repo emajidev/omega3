@@ -68,10 +68,10 @@
                         <div class="nav-link" href="#">Creativos</div>
                     </li>
                     <li class="nav-item">
-                        <div id="myBtn" class="btn nav-link" style="color:#28a745">Iniciar</div>
+                        <div id="btn-singin" class="btn nav-link" style="color:#28a745">Iniciar</div>
                     </li>
                     <li class="nav-item">
-                        <div class="btn nav-link " style="color:white; ">
+                        <div id="btn-singup" class="btn nav-link " style="color:white; ">
                             <p style="background:#28a745 ;padding:0 10px 0 10px; border-radius:2px;">Registrarse</p>
                         </div>
                     </li>
@@ -117,7 +117,6 @@
     <!-- End of Main banner -->
 
     <!-- Why us -->
-
     <section class="pt-120 pb-120">
         <div class="section-title">
             <img data-animate="fadeInUp" data-delay=".1" src="img/logo_friyawa4png.png" style="width:5%; height:auto;">
@@ -207,7 +206,7 @@
     <!-- End of Home video -->
 
 
-
+    <!-- Start courses -->
     <section class="pt-120 pb-120">
         <div class="container">
             <!-- Section title -->
@@ -402,11 +401,11 @@
 
         </div>
         <div class="blog-link text-center" data-animate="fadeInUp" data-delay=".4">
-            <a href="#" class="btn btn-primary">Entrar</a>
+            <a href="courses_page.html class="btn btn-primary">Entrar</a>
         </div>
         </div>
     </section>
-    <!-- End of Latest news -->
+    <!-- End courses -->
 
     <!-- Footer -->
     <footer class="footer text-light bg-secondary">
@@ -521,17 +520,17 @@
             <i class="fa fa-hand-pointer-o"></i>
         </a>
     </div>
-
     <!-- End of Back to top button -->
 
 
     <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <!-- Start Modal Sing In -->
+    <div id="Modal-singin" class="modal">
 
         <!-- Modal content -->
 
         <div class="modal-content col-lg-3 .col-md-3 .col-sm-3 ">
-            <span class="close">&times;</span>
+            <span class="close closein">&times;</span>
             <div class="modal-header2">
                 <div class="logocont">
                     <img class="logoModel" src="img/logo_friyawa4png.png" alt="">
@@ -547,10 +546,11 @@
                 </div>
             </div>
             <div class="modal-footer2">
-
+                    <a style="color: white " href="courses_page.html">
                 <div class="textcont">
-                    <div class="btn btn-success span100">Entrar</div>
+                    <div class="btn btn-success span100">Entrar </div>
                 </div>
+            </a>
                 <div class="textcont">
                     <a class="linksModal" href="" style="color:cadetblue">¿Olvidaste tu contraseña?</a>
                 </div>
@@ -562,7 +562,48 @@
         </div>
 
     </div>
+    <!-- End Modal Sing In -->
 
+    <!-- Start Modal Sing Up -->
+    <div id="Modal-singup" class="modal">
+
+            <!-- Modal content -->
+    
+            <div class="modal-content col-lg-3 .col-md-3 .col-sm-3 ">
+                <span class="close closeup">&times;</span>
+                <div class="modal-header2">
+                    <div class="logocont">
+                        <img class="logoModel" src="img/logo_friyawa4png.png" alt="">
+                    </div>
+                    <h5>Registrarse</h5>
+    
+                </div>
+                <div class="modal-body">
+                    <div class="textcont">
+                        <input class="inputIn span100" type="text" placeholder="Nombre de usuario">
+                        <input class="inputIn span100" type="text" placeholder="correo electronico">
+                        <input class="inputIn span100" type="text" placeholder="contraseña">
+                    </div>
+                </div>
+                <div class="modal-footer2">
+                <a style="color: white " href="courses_page.html">
+                    <div class="textcont">
+                            
+                        <div class="btn btn-success span100">Aceptar</div>
+                    
+                    </div>
+                </a> 
+                    <div class="textcont">
+                        ¿Ya tienes cuenta? <a class="linksModal" href="" style="color:cadetblue">Iniciar sesión</a>
+                    </div>
+    
+                </div>
+            </div>
+    
+    </div>    
+    <!-- End Modal Sing Up -->
+
+    <!-- Emd The Modal -->
     <!-- JS files -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
