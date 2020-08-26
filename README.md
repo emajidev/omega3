@@ -1,3 +1,3 @@
 # templateOfWebCourses
 
-![Vector-clock img](https://github.com/emajidev/templateOfWebCourses/blob/master/sample.png)
+![Vector-clock img](https://raw.githubusercontent.com/emajidev/templateOfWebCourses/master/sample.png)
